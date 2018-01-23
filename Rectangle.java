@@ -1,14 +1,24 @@
 class Rectangle extends DrawableObject {
    
-   int leftX;
-   int topY;
-   int rightX;
-   int bottomY;
-   int width;
-   int height;
+   protected int leftX;
+   protected int topY;
+   protected int rightX;
+   protected int bottomY;
+   protected int width;
+   protected int height;
    
    //constructor
    public Rectangle(Graphics g, Point topLeft, Point bottomRight) {
+      this.leftX = topLeft.getX();
+      this.topY = topLeft.getY();
+      this.rightX = bottomRight.getX();
+      this.bottomY = bottomRight.getY();
+      
+      this.width = this.rightX - this.leftX;
+      this.height = this.bottomY - this.topY;
+   }
+   
+   public Rectangle(Graphics g, int leftX, int topY, int width, int height) {
       
    }
    
