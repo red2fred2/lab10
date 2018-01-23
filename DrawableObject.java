@@ -1,6 +1,6 @@
 class DrawableObject {
    
-   Graphics graphics;
+   protected Graphics graphics;
    
    //constructor
    public DrawableObject(Graphics g) {
