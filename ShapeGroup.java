@@ -54,18 +54,10 @@ public class ShapeGroup {
    }
    
    protected void fillAll() {
-      /*if(rectangles.length > 0) {
-         for(Rectangle rect : rectangles) fill(rect);
-      }
-      if(circles.length > 0) {
-         for(Circle circ : circles) fill(circ);
-      }
-      if(lines.length > 0) {
-         for(Line lin : lines) draw(lin);
-      }
-      if(polygons.length > 0) {
-         for(Polygon poly : polygons) fill(poly);
-      }*/
+      for(Rectangle rect : rectangles) fill(rect);
+      for(Circle circ : circles) fill(circ);
+      for(Line lin : lines) draw(lin);
+      for(Polygon poly : polygons) fill(poly);
    }
    
 }
