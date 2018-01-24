@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-class Rectangle extends DrawableObject {
+class Circle extends DrawableObject {
 
    protected Point topLeft;
    protected Point bottomRight;
@@ -19,7 +19,7 @@ class Rectangle extends DrawableObject {
     * @param topLeft
     * @param bottomRight
     */
-   public Rectangle(Graphics graphics, Point topLeft, Point bottomRight) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight) {
       super(graphics);
 
       this.topLeft = topLeft;
@@ -42,7 +42,7 @@ class Rectangle extends DrawableObject {
     * @param width
     * @param height
     */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height) {
       super(graphics);
 
       this.topLeft = new Point(leftX, topY);
@@ -64,7 +64,7 @@ class Rectangle extends DrawableObject {
     * @param bottomRight
     * @param color
     */
-   public Rectangle(Graphics graphics, Point topLeft, Point bottomRight, Color color) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight, Color color) {
       super(graphics, color);
 
       this.topLeft = topLeft;
@@ -88,7 +88,7 @@ class Rectangle extends DrawableObject {
     * @param height
     * @param color
     */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height, Color color) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height, Color color) {
       super(graphics, color);
 
       this.topLeft = new Point(leftX, topY);
@@ -110,7 +110,7 @@ class Rectangle extends DrawableObject {
     * @param bottomRight
     * @param greyScale
     */
-   public Rectangle(Graphics graphics, Point topLeft, Point bottomRight, int greyScale) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight, int greyScale) {
       super(graphics, greyScale);
 
       this.topLeft = topLeft;
@@ -134,7 +134,7 @@ class Rectangle extends DrawableObject {
     * @param height
     * @param greyScale
     */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height, int greyScale) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height, int greyScale) {
       super(graphics, greyScale);
 
       this.topLeft = new Point(leftX, topY);
@@ -158,7 +158,7 @@ class Rectangle extends DrawableObject {
     * @param green
     * @param blue
     */
-   public Rectangle(Graphics graphics, Point topLeft, Point bottomRight, int red, int green, int blue) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight, int red, int green, int blue) {
       super(graphics, red, green, blue);
 
       this.topLeft = topLeft;
@@ -184,7 +184,7 @@ class Rectangle extends DrawableObject {
     * @param green
     * @param blue
     */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height, int red, int green, int blue) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height, int red, int green, int blue) {
       super(graphics, red, green, blue);
 
       this.topLeft = new Point(leftX, topY);
@@ -210,9 +210,9 @@ class Rectangle extends DrawableObject {
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
       final int height = bottomY - topY;
-      
+
       graphics.setColor(color);
-      graphics.drawRect(leftX, topY, width, height);
+      graphics.drawOval(leftX, topY, width, height);
    }
    
    /**
@@ -226,9 +226,9 @@ class Rectangle extends DrawableObject {
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
       final int height = bottomY - topY;
-      
+
       graphics.setColor(color);
-      graphics.fillRect(leftX, topY, width, height);
+      graphics.fillOval(leftX, topY, width, height);
    }
 
 }
