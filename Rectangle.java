@@ -213,5 +213,20 @@ class Rectangle extends DrawableObject {
 
       graphics.drawRect(leftX, topY, width, height);
    }
+   
+   /**
+    * @param topLeft
+    *           top left point
+    * @param bottomRight
+    *           bottom right point
+    */
+   protected void fill(Point topLeft, Point bottomRight) {
+      final int leftX = topLeft.getX();
+      final int topY = topLeft.getY();
+      final int width = rightX - leftX;
+      final int height = bottomY - topY;
+
+      graphics.fillRect(leftX, topY, width, height);
+   }
 
 }
