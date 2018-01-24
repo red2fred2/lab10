@@ -1,6 +1,7 @@
-import java.awt.Graphics;
+import java.awt.*;
+import java.applet.*;
 
-class Lab10vst {
+class Lab10vst extends Applet {
    public void paint(Graphics g) {
 
    }

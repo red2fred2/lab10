@@ -1,10 +1,42 @@
-public class ShapeGroup {
+import java.awt.*;
 
+public class ShapeGroup {
+   
+   Graphics g;
+   
    Rectangle[] rectangles;
    Circle[] circles;
    Line[] lines;
    Polygon[] polygons;
-
+   
+   public ShapeGroup(Graphics g) {
+      this.g = g;
+   }
+   
+   public void add(Rectangle... rects) {
+      for(Rectangle rectangle : rects) {
+         Utility.append(this.rectangles, rectangle);
+      }
+   }
+   
+   public void add(Circle... circs) {
+      for(Circle circle : circs) {
+         Utility.append(this.circles, circle);
+      }
+   }
+   
+   public void add(Line... lin) {
+      for(Line line : lin) {
+         Utility.append(this.lines, line);
+      }
+   }
+   
+   public void add(Polygon... polys) {
+      for(Polygon polygon : polys) {
+         Utility.append(this.polygons, polygon);
+      }
+   }
+   
    private void draw(Rectangle rect) {rect.draw();}
    private void draw(Circle circ) {circ.draw();}
    private void draw(Line lin) {lin.draw();}
