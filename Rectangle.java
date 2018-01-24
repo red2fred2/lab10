@@ -10,7 +10,7 @@ class Rectangle extends DrawableObject {
    protected int height;
    
    //constructor
-   public Rectangle(Graphics g, Point topLeft, Point bottomRight) {//
+   public Rectangle(Graphics g, Point topLeft, Point bottomRight) {
       super(g);
 	   
 	  this.leftX = topLeft.getX();
@@ -24,12 +24,19 @@ class Rectangle extends DrawableObject {
    
    public Rectangle(Graphics g, int leftX, int topY, int width, int height) {
       super(g);
+      
+      this.leftX = leftX;
+      this.topY = topY;
+      this.width = width;
+      this.height = height;
+      
+      this.rightX = leftX + width;
+      this.topY = topY + height;
    }
    
-   protected void rect(Point topLeft, Point bottomRight) {
+   protected void draw(Point topLeft, Point bottomRight) {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
-      
       final int width = rightX - leftX;
       final int height = bottomY - topY;
       
