@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 class Rectangle extends DrawableObject {
    
    protected int leftX;
@@ -9,7 +11,9 @@ class Rectangle extends DrawableObject {
    
    //constructor
    public Rectangle(Graphics g, Point topLeft, Point bottomRight) {
-      this.leftX = topLeft.getX();
+      super(g);
+	   
+	  this.leftX = topLeft.getX();
       this.topY = topLeft.getY();
       this.rightX = bottomRight.getX();
       this.bottomY = bottomRight.getY();
@@ -19,16 +23,16 @@ class Rectangle extends DrawableObject {
    }
    
    public Rectangle(Graphics g, int leftX, int topY, int width, int height) {
-      
+      super(g);
    }
    
-   protected rect(Point topLeft, Point bottomRight) {
+   protected void rect(Point topLeft, Point bottomRight) {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
       
-      final int width = ;
+      final int width = rightX - leftX;
       final int height = bottomY - topY;
       
-      g.drawRect(leftX, topY, );
+      graphics.drawRect(leftX, topY, width, height);
    }
 }

@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 class DrawableObject {
    
    protected Graphics graphics;

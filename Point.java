@@ -1,3 +1,6 @@
+/**
+ * An x, y point
+ */
 class Point {
    
    private int x;
