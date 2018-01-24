@@ -103,13 +103,7 @@ class Line extends DrawableObject {
       this.topY = topY + height;
    }
 
-   /**
-    * @param topLeft
-    *           top left point
-    * @param bottomRight
-    *           bottom right point
-    */
-   protected void draw(Point topLeft, Point bottomRight) {
+   protected void draw() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
 

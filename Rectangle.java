@@ -103,13 +103,7 @@ class Rectangle extends DrawableObject {
       this.topY = topY + height;
    }
 
-   /**
-    * @param topLeft
-    *           top left point
-    * @param bottomRight
-    *           bottom right point
-    */
-   protected void draw(Point topLeft, Point bottomRight) {
+   protected void draw() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
@@ -119,13 +113,7 @@ class Rectangle extends DrawableObject {
       graphics.drawRect(leftX, topY, width, height);
    }
 
-   /**
-    * @param topLeft
-    *           top left point
-    * @param bottomRight
-    *           bottom right point
-    */
-   protected void fill(Point topLeft, Point bottomRight) {
+   protected void fill() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
