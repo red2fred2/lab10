@@ -9,7 +9,6 @@ class Rectangle extends DrawableObject {
    protected int width;
    protected int height;
    
-   //constructor
    public Rectangle(Graphics g, Point topLeft, Point bottomRight) {
       super(g);
 	   

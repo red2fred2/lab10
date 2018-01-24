@@ -6,7 +6,6 @@ class Point {
    private int x;
    private int y;
    
-   //constructor
    public Point() {
       this.x = 0;
       this.y = 0;
