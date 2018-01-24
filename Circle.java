@@ -103,7 +103,7 @@ class Circle extends DrawableObject {
       this.topY = topY + height;
    }
 
-   protected void draw() {
+   public void draw() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
@@ -113,7 +113,7 @@ class Circle extends DrawableObject {
       graphics.drawOval(leftX, topY, width, height);
    }
 
-   protected void fill() {
+   public void fill() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
