@@ -10,7 +10,7 @@ class Rectangle extends DrawableObject {
    protected int height;
    
    //constructor
-   public Rectangle(Graphics g, Point topLeft, Point bottomRight) {
+   public Rectangle(Graphics g, Point topLeft, Point bottomRight) {//
       super(g);
 	   
 	  this.leftX = topLeft.getX();
