@@ -118,7 +118,7 @@ class Circle extends DrawableObject {
       graphics.setColor(color);
       graphics.drawOval(leftX, topY, width, height);
    }
-   
+
    /**
     * @param topLeft
     *           top left point

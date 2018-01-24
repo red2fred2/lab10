@@ -114,11 +114,11 @@ class Rectangle extends DrawableObject {
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
       final int height = bottomY - topY;
-      
+
       graphics.setColor(color);
       graphics.drawRect(leftX, topY, width, height);
    }
-   
+
    /**
     * @param topLeft
     *           top left point
@@ -130,7 +130,7 @@ class Rectangle extends DrawableObject {
       final int topY = topLeft.getY();
       final int width = rightX - leftX;
       final int height = bottomY - topY;
-      
+
       graphics.setColor(color);
       graphics.fillRect(leftX, topY, width, height);
    }
