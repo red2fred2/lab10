@@ -7,8 +7,5 @@ public class Lab10vst extends Applet {
        
        Circle object = new Circle(g, new Point(0, 0), new Point(500, 500));
        
-       ShapeGroup group = new ShapeGroup(g);
-       group.add(object);
-       //group.fillAll();
-	}
+   }
 }
