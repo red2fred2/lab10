@@ -28,5 +28,9 @@ class DrawableObject {
       this.graphics = graphics;
       this.color = color;
    }
+   
+   public void setColor(Color color) {
+      this.color = color;
+   }
 
 }

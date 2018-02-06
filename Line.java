@@ -110,5 +110,8 @@ class Line extends DrawableObject {
       graphics.setColor(color);
       graphics.drawLine(leftX, topY, rightX, bottomY);
    }
-
+   
+   public void setColor(Color color) {
+      super.setColor(color);
+   }
 }
