@@ -23,8 +23,4 @@ class Point {
    public int getY() {
       return this.y;
    }
-   
-   public void setColor(Color color) {
-      super.setColor(color);
-   }
 }

@@ -6,8 +6,8 @@ import java.awt.Graphics;
  */
 class DrawableObject {
 
-   protected Graphics graphics;
-   protected Color color;
+   private Graphics graphics;
+   private Color color;
 
    /**
     * @param graphics
