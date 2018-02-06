@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-class LugNut extends circle {
+class LugNut extends Circle {
    
    final private int diameter = 5
    
