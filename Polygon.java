@@ -51,5 +51,9 @@ public class Polygon extends DrawableObject {
       graphics.setColor(color);
       graphics.fillPolygon(xPoints, yPoints, numberOfPoints);
    }
+   
+   public void setColor(Color color) {
+      super.setColor(color);
+   }
 
 }

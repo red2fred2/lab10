@@ -122,5 +122,9 @@ class Rectangle extends DrawableObject {
       graphics.setColor(color);
       graphics.fillRect(leftX, topY, width, height);
    }
+   
+   public void setColor(Color color) {
+      super.setColor(color);
+   }
 
 }

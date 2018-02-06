@@ -122,5 +122,9 @@ class Circle extends DrawableObject {
       graphics.setColor(color);
       graphics.fillOval(leftX, topY, width, height);
    }
+   
+   public void setColor(Color color) {
+      super.setColor(color);
+   }
 
 }
