@@ -3,11 +3,9 @@ import java.awt.Graphics;
 
 class LugNut extends Circle {
    
-   final private int diameter = 5;
-   
    public LugNut(Graphics g, Point topLeft) {
-      super(g, topLeft.getX(), topLeft.getY(), topLeft.getX() + diameter, topLeft.getY() + diameter);
-      super.setColor(Color.grey);
+      super(g, topLeft, new Point(topLeft.getX() + 5, topLeft.getY() + 5));
+      super.setColor(Color.black);
    }
    
    public void draw() {
