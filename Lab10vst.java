@@ -9,5 +9,7 @@ public class Lab10vst extends Applet {
        wheel.draw();
         wheel2.draw();
         
+       Door door = new Door(g, new Point(100, 100));
+       door.draw();
    }
 }
