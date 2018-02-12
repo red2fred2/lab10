@@ -119,8 +119,8 @@ class Rectangle extends DrawableObject {
       final int width = rightX - leftX;
       final int height = bottomY - topY;
 
-      graphics.setColor(color);
-      graphics.fillRect(leftX, topY, width, height);
+      super.graphics.setColor(color);
+      super.graphics.fillRect(leftX, topY, width, height);
    }
    
    public void setColor(Color color) {

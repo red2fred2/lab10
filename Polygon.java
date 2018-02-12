@@ -43,13 +43,13 @@ public class Polygon extends DrawableObject {
    }
 
    public void draw() {
-      graphics.setColor(color);
-      graphics.drawPolygon(xPoints, yPoints, numberOfPoints);
+      super.graphics.setColor(color);
+      super.graphics.drawPolygon(xPoints, yPoints, numberOfPoints);
    }
 
    public void fill() {
-      graphics.setColor(color);
-      graphics.fillPolygon(xPoints, yPoints, numberOfPoints);
+      super.graphics.setColor(color);
+      super.graphics.fillPolygon(xPoints, yPoints, numberOfPoints);
    }
    
    public void setColor(Color color) {
