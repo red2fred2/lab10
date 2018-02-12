@@ -5,33 +5,10 @@ import java.awt.Graphics;
 
 public class Car {
 
-private Graphics = g;
+   private Graphics;
 
-public Car(Graphics g) {
-g.drawBody;
-g.drawWindows;
+   public Car(Graphics g) {
+      graphics = g;
+      Body body = new Body();
+   }
 }
-
-
-}
-
-
-public void drawBody {
-
-g.fillRect(
-
-
-}
-
-public void drawWindows {
-
-
-
-}
-
-
-
-}
-
-
-
