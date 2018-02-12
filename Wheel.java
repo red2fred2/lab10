@@ -8,7 +8,6 @@ class Wheel extends Circle {
    public Wheel(Graphics g, Point topLeft) {
       super(g, topLeft, new Point(topLeft.getX() + 50, topLeft.getY() + 50));
       super.setColor(Color.gray);
-      LugNut leftNut = new LugNut(g, topLeft);
    }
    public void draw() {
       super.fill();  
