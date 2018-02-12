@@ -5,11 +5,11 @@ import java.awt.Graphics;
 
 public class Car {
 
-public Car() {
+private Graphics = g;
+
+public Car(Graphics g) {
 g.drawBody;
 g.drawWindows;
-
-
 }
 
 
@@ -18,6 +18,7 @@ g.drawWindows;
 
 public void drawBody {
 
+g.fillRect(
 
 
 }
