@@ -24,8 +24,8 @@ public class Body {
    /**
     * Draws the body
     */
-   public void Draw() {
-      shape.fill();
+   public void draw() {
+      //shape.fill();
    }
 
 }
