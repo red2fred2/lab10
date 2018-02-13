@@ -7,11 +7,11 @@ import java.util.Vector;
  */
 public class Car {
    
+   /** The body of the car */
+   private Body body;
    private static final int bodyXOffset = 0;
    private static final int bodyYOffset = 25;
    
-   /** The body of the car */
-   private Body body;
    /** the top left corner of the car's rectangular bounding box */
    protected Point position;
    
@@ -22,7 +22,10 @@ public class Car {
     *   the top left corner of the car's rectangular bounding box
     */
    public Car(Graphics graphics, Point position) {
-      this.body = new Body(graphics, new Point(100, 100));
+      this.body = new Body(
+         graphics,
+         new Point(bodyXOffset, bodyYOffset
+      ));
    }
    
    /**
