@@ -2,12 +2,19 @@ package lab10;
 import java.awt.Color;
 import java.awt.Graphics;
 
+/**
+ * Polygon wrapper class
+ */
 public class Polygon extends DrawableObject {
 
+   /** array of Point objects */
    protected Point[] points;
+   /** duh */
    protected int numberOfPoints = 0;
 
+   /** array of X components */
    protected int[] xPoints;
+   /** array of Y components */
    protected int[] yPoints;
 
    /**
@@ -43,16 +50,25 @@ public class Polygon extends DrawableObject {
       }
    }
 
+   /**
+    * Draws the polygon
+    */
    public void draw() {
       super.graphics.setColor(color);
       super.graphics.drawPolygon(xPoints, yPoints, numberOfPoints);
    }
 
+   /**
+    * Draws the polygon
+    */
    public void fill() {
       super.graphics.setColor(color);
       super.graphics.fillPolygon(xPoints, yPoints, numberOfPoints);
    }
    
+   /**
+    * Sets the polygon's color
+    */
    public void setColor(Color color) {
       super.setColor(color);
    }
