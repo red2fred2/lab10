@@ -1,5 +1,4 @@
 package lab10;
-
 import java.awt.Color;
 import java.awt.Graphics;
 
@@ -8,29 +7,36 @@ import java.awt.Graphics;
  */
 class DrawableObject {
 
+   /** The root graphics object */
    protected Graphics graphics;
+   /** Object color */
    protected Color color;
 
    /**
     * @param graphics
-    *           specific graphics object
+    *   The root graphics object
     */
    public DrawableObject(Graphics graphics) {
       this.graphics = graphics;
-      this.color = new Color(0);
+      this.color = Color.GRAY;
    }
 
    /**
     * @param graphics
-    *           specific graphics object
+    *   The root graphics object
     * @param color
-    *           object color
+    *   object color
     */
    public DrawableObject(Graphics graphics, Color color) {
       this.graphics = graphics;
       this.color = color;
    }
    
+   /**
+    * Sets the object's color
+    * @param color
+    *   Object's color
+    */
    public void setColor(Color color) {
       this.color = color;
    }
