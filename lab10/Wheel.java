@@ -16,8 +16,12 @@ class Wheel extends Circle {
     */
    public Wheel(Graphics graphics, Point topLeft) {
       super(graphics, topLeft, 50);
-      setColor(Color.gray);
+      setColor(Color.DARK_GRAY);
    }
+   
+   /**
+    * Draws the wheel
+    */
    public void draw() {
       super.fill();  
    }

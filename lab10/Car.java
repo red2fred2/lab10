@@ -18,7 +18,7 @@ public class Car {
    
    /** the right wheel of the car */
    private Wheel rightWheel;
-   private static final int rightWheelXOffset = 100;
+   private static final int rightWheelXOffset = 150;
    private static final int rightWheelYOffset = 50;
    
    /** the top left corner of the car's rectangular bounding box */
