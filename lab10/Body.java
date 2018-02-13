@@ -12,9 +12,9 @@ public class Body {
    /** The general shape of the body */
    private Rectangle base;
    private static final int baseXOffset = 0;
-   private static final int baseYOffset = 50;
-   private static final int baseWidth = 200;
-   private static final int baseHeight = 25;
+   private static final int baseYOffset = 0;
+   private static final int baseWidth = 275;
+   private static final int baseHeight = 50;
 
    /**
     * @param graphics
