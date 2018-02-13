@@ -2,65 +2,34 @@ package lab10;
 import java.awt.Color;
 import java.awt.Graphics;
 
+/**
+ * Represents a rectangle
+ */
 class Rectangle extends DrawableObject {
 
+   /** Top left corner */
    protected Point topLeft;
+   /** Bottom right corner */
    protected Point bottomRight;
-
-   protected int leftX;
-   protected int topY;
-   protected int rightX;
-   protected int bottomY;
-   protected int width;
-   protected int height;
 
    /**
     * @param graphics
-    *           specific graphics object
+    *   The specific graphics object
     * @param topLeft
+    *   Top left corner
     * @param bottomRight
+    *   Bottom right corner
     */
    public Rectangle(Graphics graphics, Point topLeft, Point bottomRight) {
       super(graphics);
 
       this.topLeft = topLeft;
       this.bottomRight = bottomRight;
-
-      this.leftX = topLeft.getX();
-      this.topY = topLeft.getY();
-      this.rightX = bottomRight.getX();
-      this.bottomY = bottomRight.getY();
-
-      this.width = this.rightX - this.leftX;
-      this.height = this.bottomY - this.topY;
    }
 
    /**
     * @param graphics
-    *           specific graphics object
-    * @param leftX
-    * @param topY
-    * @param width
-    * @param height
-    */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height) {
-      super(graphics);
-
-      this.topLeft = new Point(leftX, topY);
-      this.bottomRight = new Point(rightX, bottomY);
-
-      this.leftX = leftX;
-      this.topY = topY;
-      this.width = width;
-      this.height = height;
-
-      this.rightX = leftX + width;
-      this.topY = topY + height;
-   }
-
-   /**
-    * @param graphics
-    *           specific graphics object
+    *   specific graphics object
     * @param topLeft
     * @param bottomRight
     * @param color
@@ -70,60 +39,28 @@ class Rectangle extends DrawableObject {
 
       this.topLeft = topLeft;
       this.bottomRight = bottomRight;
-
-      this.leftX = topLeft.getX();
-      this.topY = topLeft.getY();
-      this.rightX = bottomRight.getX();
-      this.bottomY = bottomRight.getY();
-
-      this.width = this.rightX - this.leftX;
-      this.height = this.bottomY - this.topY;
    }
 
    /**
-    * @param graphics
-    *           specific graphics object
-    * @param leftX
-    * @param topY
-    * @param width
-    * @param height
-    * @param color
+    * Draws the rectangle
     */
-   public Rectangle(Graphics graphics, int leftX, int topY, int width, int height, Color color) {
-      super(graphics, color);
-
-      this.topLeft = new Point(leftX, topY);
-      this.bottomRight = new Point(rightX, bottomY);
-
-      this.leftX = leftX;
-      this.topY = topY;
-      this.width = width;
-      this.height = height;
-
-      this.rightX = leftX + width;
-      this.topY = topY + height;
-   }
-
    public void draw() {
-      final int leftX = topLeft.getX();
-      final int topY = topLeft.getY();
-      final int width = rightX - leftX;
-      final int height = bottomY - topY;
-
-      graphics.setColor(color);
-      graphics.drawRect(leftX, topY, width, height);
-   }
-
-   public void fill() {
-      final int leftX = topLeft.getX();
-      final int topY = topLeft.getY();
-      final int width = rightX - leftX;
-      final int height = bottomY - topY;
 
       super.graphics.setColor(color);
-      super.graphics.fillRect(leftX, topY, width, height);
+      super.graphics.drawRect(topLeft.getX(), topLeft.getY(), bottomRight.getX() - topLeft.getX(), bottomRight.getY() - topLeft.getY());
+   }
+
+   /**
+    * Draws the rectangle
+    */
+   public void fill() {
+      super.graphics.setColor(color);
+      super.graphics.drawRect(topLeft.getX(), topLeft.getY(), bottomRight.getX() - topLeft.getX(), bottomRight.getY() - topLeft.getY());
    }
    
+   /**
+    * Sets the rectangle's color
+    */
    public void setColor(Color color) {
       super.setColor(color);
    }
