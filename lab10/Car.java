@@ -1,6 +1,5 @@
 package lab10;
 import java.awt.Graphics;
-import java.util.Vector;
 
 /**
  * Represents a car
