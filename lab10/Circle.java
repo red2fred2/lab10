@@ -54,6 +54,9 @@ class Circle extends DrawableObject {
       graphics.drawOval(leftX, topY, diameter, diameter);
    }
 
+   /**
+    * Draws the circle which this object represents
+    */
    public void fill() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
@@ -62,6 +65,9 @@ class Circle extends DrawableObject {
       graphics.fillOval(leftX, topY, diameter, diameter);
    }
    
+   /**
+    * Sets this circle's color
+    */
    public void setColor(Color color) {
       super.setColor(color);
    }
