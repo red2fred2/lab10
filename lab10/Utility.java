@@ -21,12 +21,6 @@ public class Utility {
       return temp.toArray();
    }
    
-   public static Object[] append(Line[] array, Line i) {
-      ArrayList<Object> temp = new ArrayList<Object>(Arrays.asList(array));
-      temp.add(i);
-      return temp.toArray();
-   }
-   
    public static Object[] append(Polygon[] array, Polygon i) {
       ArrayList<Object> temp = new ArrayList<Object>(Arrays.asList(array));
       temp.add(i);
