@@ -10,22 +10,22 @@ public class Car {
    /** The body of the car */
    private Body body;
    private static final int bodyXOffset = 0;
-   private static final int bodyYOffset = 25;
+   private static final int bodyYOffset = 50;
    
    /** The roof of the car */
    private Roof roof;
    private static final int roofXOffset = 50;
-   private static final int roofYOffset = 50;
+   private static final int roofYOffset = 0;
    
    /** the left wheel of the car */
    private Wheel leftWheel;
    private static final int leftWheelXOffset = 25;
-   private static final int leftWheelYOffset = 50;
+   private static final int leftWheelYOffset = 75;
    
    /** the right wheel of the car */
    private Wheel rightWheel;
    private static final int rightWheelXOffset = 200;
-   private static final int rightWheelYOffset = 50;
+   private static final int rightWheelYOffset = 75;
    
    /** the top left corner of the car's rectangular bounding box */
    protected Point position;
