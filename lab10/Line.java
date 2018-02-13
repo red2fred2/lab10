@@ -115,4 +115,5 @@ class Line extends DrawableObject {
    public void setColor(Color color) {
       super.setColor(color);
    }
+   
 }

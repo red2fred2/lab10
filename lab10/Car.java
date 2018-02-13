@@ -1,16 +1,15 @@
 package lab10;
-
-import java.awt.Color;
 import java.awt.Graphics;
 
-
-
 public class Car {
-
-   private Graphics graphics;
-
+   
+   Body body;
+   
    public Car(Graphics g) {
-      graphics = g;
-      Body body = new Body(g, new Point(100, 100));
+      this.body = new Body(g, new Point(100, 100));
+   }
+   
+   public void draw() {
+      
    }
 }

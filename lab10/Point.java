@@ -1,4 +1,5 @@
 package lab10;
+
 /**
  * An x, y point
  */
@@ -24,4 +25,5 @@ class Point {
    public int getY() {
       return this.y;
    }
+   
 }

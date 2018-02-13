@@ -1,25 +1,18 @@
 package lab10;
-
-import java.awt.Color;
 import java.awt.Graphics;
 
 public class Body {
 
-protected Graphics g;
-private Point topLeft;
-private Polygon shape;
+   protected Graphics g;
+   private Polygon shape;
 
-public Body(Graphics g, Point topLeft) {
+   public Body(Graphics g, Point topLeft) {
 
-   this.g = g;
-   this.topLeft = topLeft;
-   
-}
+      this.g = g;
+   }
 
-public void Draw() {
-
-shape.fill();
-
-}
+   public void Draw() {
+      shape.fill();
+   }
 
 }
