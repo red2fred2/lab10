@@ -47,22 +47,16 @@ class Circle extends DrawableObject {
     * Draws the circle which this object represents
     */
    public void draw() {
-      final int leftX = topLeft.getX();
-      final int topY = topLeft.getY();
-
       graphics.setColor(color);
-      graphics.drawOval(leftX, topY, diameter, diameter);
+      graphics.drawOval(topLeft.getX(), topLeft.getY(), diameter, diameter);
    }
 
    /**
     * Draws the circle which this object represents
     */
    public void fill() {
-      final int leftX = topLeft.getX();
-      final int topY = topLeft.getY();
-
       graphics.setColor(color);
-      graphics.fillOval(leftX, topY, diameter, diameter);
+      graphics.fillOval(topLeft.getX(), topLeft.getY(), diameter, diameter);
    }
    
    /**
