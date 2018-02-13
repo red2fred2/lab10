@@ -10,11 +10,23 @@ public class Roof {
 
    /** The graphics object to be used */
    protected Graphics graphics;
+   
    /** The general shape of the roof */
    private Rectangle roofMiddle;
    private static final int roofWidth = 175;
    private static final int roofHeight = 50;
-
+   
+   /** The left window */
+   private Window leftWindow;
+   private static final int leftWindowXOffset = 175;
+   private static final int leftWindowYOffset = 50;
+   
+   /** The right window */
+   private Window rightWindow;
+   private static final int rightWindowXOffset = 175;
+   private static final int rightWindowYOffset = 50;
+   
+   
    /**
     * @param graphics
     *   The graphics object to be used
@@ -24,9 +36,9 @@ public class Roof {
     *   body color
     */
    public Roof(Graphics graphics, Point position, Color color) {
-         
-         
+      
       this.graphics = graphics;
+      
       this.roofMiddle = new Rectangle(
          graphics,
          new Point(
@@ -39,6 +51,20 @@ public class Roof {
          ),
          color
       );
+      
+      this.leftWindow = new Window(graphics,
+         new Point(
+            position.getX() + leftWindowXOffset,
+            position.getY() + leftWindowYOffset
+         )
+      );
+      
+      this.rightWindow = new Window(graphics,
+            new Point(
+               position.getX() + rightWindowXOffset,
+               position.getY() + rightWindowYOffset
+            )
+         );
    }
 
    /**
@@ -46,5 +72,7 @@ public class Roof {
     */
    public void draw() {
       roofMiddle.fill();
+      leftWindow.draw();
+      rightWindow.draw();
    }
 }
