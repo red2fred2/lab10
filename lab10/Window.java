@@ -11,8 +11,8 @@ public class Window {
    protected Graphics graphics;
    /** The general shape of the body */
    private Rectangle window;
-   private static final int windowWidth = 30;
-   private static final int windowHeight = 30;
+   private static final int windowWidth = 50;
+   private static final int windowHeight = 40;
 
    /**
     * @param graphics

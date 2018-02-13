@@ -18,13 +18,13 @@ public class Roof {
    
    /** The left window */
    private Window leftWindow;
-   private static final int leftWindowXOffset = 175;
-   private static final int leftWindowYOffset = 50;
+   private static final int leftWindowXOffset = 55;
+   private static final int leftWindowYOffset = 10;
    
    /** The right window */
    private Window rightWindow;
-   private static final int rightWindowXOffset = 175;
-   private static final int rightWindowYOffset = 50;
+   private static final int rightWindowXOffset = 115;
+   private static final int rightWindowYOffset = 10;
    
    
    /**
@@ -60,11 +60,11 @@ public class Roof {
       );
       
       this.rightWindow = new Window(graphics,
-            new Point(
-               position.getX() + rightWindowXOffset,
-               position.getY() + rightWindowYOffset
-            )
-         );
+         new Point(
+            position.getX() + rightWindowXOffset,
+            position.getY() + rightWindowYOffset
+         )
+      );
    }
 
    /**
