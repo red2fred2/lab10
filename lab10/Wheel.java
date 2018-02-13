@@ -15,7 +15,7 @@ class Wheel extends Circle {
     */
    public Wheel(Graphics graphics, Point topLeft) {
       super(graphics, topLeft, 50);
-      setColor(Color.DARK_GRAY);
+      setColor(new Color(50,50,50));
    }
    
    /**
