@@ -30,8 +30,10 @@ public class Car {
     *   The graphics class to be used
     * @param position
     *   the top left corner of the car's rectangular bounding box
+    * @param color
+    *   body color
     */
-   public Car(Graphics graphics, Point position) {
+   public Car(Graphics graphics, Point position, Color color) {
       final int positionX = position.getX();
       final int positionY = position.getY();
       
@@ -41,7 +43,7 @@ public class Car {
             position.getX() + bodyXOffset,
             position.getY() + bodyYOffset
          ),
-         Color.BLUE
+         color
       );
       this.leftWheel = new Wheel(
          graphics,
