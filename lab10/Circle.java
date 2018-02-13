@@ -1,7 +1,8 @@
+package lab10;
 import java.awt.Color;
 import java.awt.Graphics;
 
-class Line extends DrawableObject {
+class Circle extends DrawableObject {
 
    protected Point topLeft;
    protected Point bottomRight;
@@ -19,7 +20,7 @@ class Line extends DrawableObject {
     * @param topLeft
     * @param bottomRight
     */
-   public Line(Graphics graphics, Point topLeft, Point bottomRight) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight) {
       super(graphics);
 
       this.topLeft = topLeft;
@@ -42,7 +43,7 @@ class Line extends DrawableObject {
     * @param width
     * @param height
     */
-   public Line(Graphics graphics, int leftX, int topY, int width, int height) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height) {
       super(graphics);
 
       this.topLeft = new Point(leftX, topY);
@@ -64,7 +65,7 @@ class Line extends DrawableObject {
     * @param bottomRight
     * @param color
     */
-   public Line(Graphics graphics, Point topLeft, Point bottomRight, Color color) {
+   public Circle(Graphics graphics, Point topLeft, Point bottomRight, Color color) {
       super(graphics, color);
 
       this.topLeft = topLeft;
@@ -88,7 +89,7 @@ class Line extends DrawableObject {
     * @param height
     * @param color
     */
-   public Line(Graphics graphics, int leftX, int topY, int width, int height, Color color) {
+   public Circle(Graphics graphics, int leftX, int topY, int width, int height, Color color) {
       super(graphics, color);
 
       this.topLeft = new Point(leftX, topY);
@@ -106,12 +107,25 @@ class Line extends DrawableObject {
    public void draw() {
       final int leftX = topLeft.getX();
       final int topY = topLeft.getY();
+      final int width = rightX - leftX;
+      final int height = bottomY - topY;
 
-      super.graphics.setColor(color);
-      super.graphics.drawLine(leftX, topY, rightX, bottomY);
+      graphics.setColor(color);
+      graphics.drawOval(leftX, topY, width, height);
+   }
+
+   public void fill() {
+      final int leftX = topLeft.getX();
+      final int topY = topLeft.getY();
+      final int width = rightX - leftX;
+      final int height = bottomY - topY;
+
+      graphics.setColor(color);
+      graphics.fillOval(leftX, topY, width, height);
    }
    
    public void setColor(Color color) {
       super.setColor(color);
    }
+
 }

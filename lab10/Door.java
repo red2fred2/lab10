@@ -1,3 +1,4 @@
+package lab10;
 import java.awt.Color;
 import java.awt.Graphics;
 

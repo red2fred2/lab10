@@ -1,3 +1,4 @@
+package lab10;
 /**
  * An x, y point
  */
