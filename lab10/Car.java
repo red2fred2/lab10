@@ -1,12 +1,15 @@
 package lab10;
 import java.awt.Graphics;
+import java.util.Vector;
 
 /**
  * Represents a car
  */
 public class Car {
    
-   private static final int bodyXOffset = 100;
+   private static final Vector<int[][]> bodyOffset = new Vector(0, 25);
+   
+   
    
    /** The body of the car */
    private Body body;
