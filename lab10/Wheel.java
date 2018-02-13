@@ -2,11 +2,21 @@ package lab10;
 import java.awt.Color;
 import java.awt.Graphics;
 
+/**
+ * Represents a car wheel
+ */
 class Wheel extends Circle {
 
-   public Wheel(Graphics g, Point topLeft) {
-      super(g, topLeft, 50);
-      super.setColor(Color.gray);
+   /**
+    * 
+    * @param graphics
+    *   graphics object
+    * @param topLeft
+    *   top left corner of this wheel's bounding box
+    */
+   public Wheel(Graphics graphics, Point topLeft) {
+      super(graphics, topLeft, 50);
+      setColor(Color.gray);
    }
    public void draw() {
       super.fill();  
