@@ -1,4 +1,3 @@
-//package stuff
 package lab10;
 import java.awt.Graphics;
 
@@ -7,8 +6,11 @@ import java.awt.Graphics;
  */
 public class Car {
    
-   //decalare variables
+   private static final int bodyXOffset = 100;
+   
+   /** The body of the car */
    private Body body;
+   /** the top left corner of the car's rectangular bounding box */
    protected Point position;
    
    /**
@@ -25,6 +27,6 @@ public class Car {
     * Draws the car
     */
    public void draw() {
-      
+      body.Draw();
    }
 }
