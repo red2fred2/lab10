@@ -12,6 +12,11 @@ public class Car {
    private static final int bodyXOffset = 0;
    private static final int bodyYOffset = 25;
    
+   /** The roof of the car */
+   private Roof roof;
+   private static final int roofXOffset = 50;
+   private static final int roofYOffset = 50;
+   
    /** the left wheel of the car */
    private Wheel leftWheel;
    private static final int leftWheelXOffset = 25;
@@ -45,14 +50,25 @@ public class Car {
          ),
          color
       );
+      
+      this.roof = new Roof(
+         graphics,
+         new Point(
+            position.getX() + roofXOffset,
+            position.getY() + roofYOffset
+         ),
+         color
+      );
+      
       this.leftWheel = new Wheel(
          graphics,
          new Point(positionX + leftWheelXOffset, positionY + leftWheelYOffset)
       );
+      
       this.rightWheel = new Wheel(
-            graphics,
-            new Point(positionX + rightWheelXOffset, positionY + rightWheelYOffset)
-         );
+         graphics,
+         new Point(positionX + rightWheelXOffset, positionY + rightWheelYOffset)
+      );
    }
    
    /**
@@ -60,6 +76,7 @@ public class Car {
     */
    public void draw() {
       body.draw();
+      roof.draw();
       leftWheel.draw();
       rightWheel.draw();
    }
