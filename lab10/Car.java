@@ -7,9 +7,8 @@ import java.util.Vector;
  */
 public class Car {
    
-   private static final Vector<int[][]> bodyOffset = new Vector(0, 25);
-   
-   
+   private static final int bodyXOffset = 0;
+   private static final int bodyYOffset = 25;
    
    /** The body of the car */
    private Body body;
