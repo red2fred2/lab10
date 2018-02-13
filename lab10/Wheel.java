@@ -8,7 +8,6 @@ import java.awt.Graphics;
 class Wheel extends Circle {
 
    /**
-    * 
     * @param graphics
     *   graphics object
     * @param topLeft

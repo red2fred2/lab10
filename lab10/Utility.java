@@ -27,4 +27,10 @@ public class Utility {
       return temp.toArray();
    }
 
+   public static Object[] append(Point[] array, Point i) {
+      ArrayList<Object> temp = new ArrayList<Object>(Arrays.asList(array));
+      temp.add(i);
+      return temp.toArray();
+   }
+
 }

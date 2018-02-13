@@ -1,4 +1,5 @@
 package lab10;
+import java.awt.Color;
 import java.awt.Graphics;
 
 /**
@@ -13,12 +14,12 @@ public class Car {
    
    /** the left wheel of the car */
    private Wheel leftWheel;
-   private static final int leftWheelXOffset = 0;
+   private static final int leftWheelXOffset = 25;
    private static final int leftWheelYOffset = 50;
    
    /** the right wheel of the car */
    private Wheel rightWheel;
-   private static final int rightWheelXOffset = 150;
+   private static final int rightWheelXOffset = 200;
    private static final int rightWheelYOffset = 50;
    
    /** the top left corner of the car's rectangular bounding box */
@@ -36,8 +37,12 @@ public class Car {
       
       this.body = new Body(
          graphics,
-         new Point(bodyXOffset, bodyYOffset
-      ));
+         new Point(
+            position.getX() + bodyXOffset,
+            position.getY() + bodyYOffset
+         ),
+         Color.BLUE
+      );
       this.leftWheel = new Wheel(
          graphics,
          new Point(positionX + leftWheelXOffset, positionY + leftWheelYOffset)

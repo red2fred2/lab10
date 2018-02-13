@@ -55,7 +55,7 @@ class Rectangle extends DrawableObject {
     */
    public void fill() {
       super.graphics.setColor(color);
-      super.graphics.drawRect(topLeft.getX(), topLeft.getY(), bottomRight.getX() - topLeft.getX(), bottomRight.getY() - topLeft.getY());
+      super.graphics.fillRect(topLeft.getX(), topLeft.getY(), bottomRight.getX() - topLeft.getX(), bottomRight.getY() - topLeft.getY());
    }
 
 }
