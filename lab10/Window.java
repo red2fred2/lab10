@@ -34,7 +34,7 @@ public class Window {
             position.getX() + windowWidth,
             position.getY() + windowHeight
          ),
-         new Color(240,245,255)
+         new Color(225,245,255)
       );
    }
    
