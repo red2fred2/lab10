@@ -47,8 +47,8 @@ public class Body {
             position.getY()
          ), 
          new Point(
-            position.getX() + 50,
-            position.getY() + 50
+            position.getX(),
+            position.getY()
          ),
          Color.yellow
       );
@@ -59,8 +59,8 @@ public class Body {
     * Draws the body
     */
    public void draw() {
-      doorLine.fill();
       base.fill();
+      doorLine.fill();
    }
 
 }
