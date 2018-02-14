@@ -11,7 +11,7 @@ public class Lab10vst extends Applet {
 	   final Point carPosition = new Point(100, 100);
 	   
 	   //initialize objects
-       Car car = new Car(g, carPosition, Color.RED);
+       Car car = new Car(g, carPosition, new Color(255, 0, 128));
        
        //do the thing
        car.draw();
