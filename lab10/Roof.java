@@ -18,7 +18,7 @@ public class Roof {
    
    /** The left window */
    private Window leftWindow;
-   private static final int leftWindowXOffset = 55;
+   private static final int leftWindowXOffset = 10;
    private static final int leftWindowYOffset = 10;
    
    /** The right window */

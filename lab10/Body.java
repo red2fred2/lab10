@@ -11,8 +11,10 @@ public class Body {
    protected Graphics graphics;
    /** The general shape of the body */
    private Rectangle base;
+   private Rectangle doorLine;
    private static final int baseWidth = 275;
    private static final int baseHeight = 50;
+
 
    /**
     * @param graphics
@@ -38,12 +40,26 @@ public class Body {
          ),
          color
       );
+        this.doorLine = new Rectangle(
+         graphics,
+         new Point(
+            position.getX(),
+            position.getY()
+         ), 
+         new Point(
+            position.getX() + 50,
+            position.getY() + 50
+         ),
+         Color.yellow
+      );
+
    }
    
    /**
     * Draws the body
     */
    public void draw() {
+      doorLine.fill();
       base.fill();
    }
 
